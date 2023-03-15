@@ -1,0 +1,30 @@
+{
+  "name": "ping-logger-with-status",
+  "version": "0.0.2",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rogerjaffe/ping-logger-with-status.git"
+  },
+  "author": "Roger Jaffe <rogerjaffe@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/rogerjaffe/ping-logger-with-status/issues"
+  },
+  "homepage": "https://github.com/rogerjaffe/ping-logger-with-status/#readme",
+  "license": "MIT",
+  "keywords": [
+    "ping",
+    "logger",
+    "ping-logger",
+    "uptime"
+  ],
+  "dependencies": {
+    "ping": "^0.4.0",
+    "winston": "^3.3.3",
+    "winston-daily-rotate-file": "^4.5.1"
+  }
+}
