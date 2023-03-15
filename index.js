@@ -53,5 +53,5 @@ const pingMe = hosts => () => {
   })
 }
 
-log(`Pinging ${HOSTS}!`);
+log(`Pinging ${HOSTS}: ${PACKET_COUNT} packets each attempt!`);
 setInterval(pingMe(HOSTS), DELAY);
