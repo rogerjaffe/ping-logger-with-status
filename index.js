@@ -48,10 +48,11 @@ const pingMe = hosts => () => {
         extra: ["-c", PACKET_COUNT, "-i", DELAY_BETWEEN_PACKETS]
       })
       .then((res) => {
-        log(`Host: ${res.host} | Alive: ${res.alive} | Latency: ${res.avg} ms | Packet loss: ${res.packetLoss}%`);
+        log(`${res.host},${res.alive},${res.avg},${res.packetLoss}`);
       })
   })
 }
 
 log(`Pinging ${HOSTS}: ${PACKET_COUNT} packets each attempt!`);
+log(`Host,IsConnected,Latency (ms),Packet loss %`);
 setInterval(pingMe(HOSTS), DELAY);
